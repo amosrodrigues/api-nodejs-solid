@@ -62,7 +62,7 @@ describe('CheckIn Use Case', () => {
     ).rejects.toBeInstanceOf(MaxNumberOfCheckInsError)
   })
 
-  it('should be able to check in twice but in diferent days', async () => {
+  it('should be able to check in twice but in different days', async () => {
     vi.setSystemTime(new Date(2022, 0, 20, 8, 0, 0))
 
     await sut.execute({
