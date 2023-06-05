@@ -3,7 +3,7 @@ import { FindManyNearbyParams, GymsRepository } from '../gyms-repository'
 import { randomUUID } from 'node:crypto'
 import { getDistanceBetweenCoordinates } from '@/utils/get-distance-between-coordinates'
 
-export class InMemoryGimsRepository implements GymsRepository {
+export class InMemoryGymsRepository implements GymsRepository {
   public items: Gym[] = []
 
   async findById(id: string) {
