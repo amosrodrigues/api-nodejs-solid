@@ -1,6 +1,6 @@
 import { prisma } from '@/lib/prisma'
 import { CheckIn, Prisma } from '@prisma/client'
-import { CheckInsRepository } from '../ckeck-ins-repository'
+import { CheckInsRepository } from '../check-ins-repository'
 import dayjs from 'dayjs'
 
 export class PrismaCheckInsRepository implements CheckInsRepository {
